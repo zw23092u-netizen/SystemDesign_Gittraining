@@ -1,0 +1,7 @@
+@startuml
+skinparam sequenceMessageAlign right
+client -> server : データを要求
+server -> DB : 問い合わせ
+DB --> server :   結果
+server --> client : データ
+@enduml
