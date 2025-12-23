@@ -1,0 +1,10 @@
+@startuml
+skinparam sequenceMessageAlign right
+MainFunction -> calculate : データを計算する
+calculate -> getInput : 入力データ要求
+getInput --> calculate : 入力データ
+calculate --> MainFunction : 計算結果
+note over MainFunction
+表示
+end note
+@enduml
