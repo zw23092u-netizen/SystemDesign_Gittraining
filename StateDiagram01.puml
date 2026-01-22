@@ -1,0 +1,12 @@
+@startuml
+
+
+state StateDiagram {
+  [*] --> on
+  on --> off : スイッチを押す
+  on --> off : 暗くなると
+  off --> on : 明るくなると
+  off--> on : 一定時間後
+  off--> on : スイッチを押す
+
+@enduml
